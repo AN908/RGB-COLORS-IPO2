@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>The RGB Colors</h1>
+
+    <p>
+      An RGB Color is specified by:
+      <span id="rgbText">rgb(red, green, blue)</span>
+    </p>
+
+    <p>
+      The parameters red, green and blue specify the intensity of the color: 0
+      (lowest) to 255 (highest)
+    </p>
+
+    <hr />
+
+    <h3>Try it out yourself...</h3>
+
+    <p>
+      Previw Width
+      <input
+        id="width-input"
+        type="number"
+        value="400"
+        min="50"
+        max="400"
+        step="10"
+      />
+      Preview Height
+      <input
+        id="height-input"
+        type="number"
+        value="200"
+        min="50"
+        max="200"
+        step="10"
+      />
+    </p>
+
+    <p>
+      red:
+      <input id="redBG" type="number" value="255" min="0" max="255" step="5" />
+      green:
+      <input
+        id="greenBG"
+        type="number"
+        value="255"
+        min="0"
+        max="255"
+        step="5"
+      />
+      blue:
+      <input id="blueBG" type="number" value="255" min="0" max="255" step="5" />
+    </p>
+
+    <!-- Color display area -->
+    <div id="display"></div>
+
+    <p id="rgbText1">rgb(255,255,0)</p>
+
+    <hr />
+
+    <p id="newFont">
+      <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank"
+        >Learn more</a
+      >
+      about RGB colours on Wikipedia
+    </p>
+  </body>
+</html>
